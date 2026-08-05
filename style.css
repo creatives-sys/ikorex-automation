@@ -3043,7 +3043,19 @@ body.dark-theme .premium-team-card:hover {
   }
   
   .nav-cta {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+    gap: 0;
+  }
+  
+  .nav-cta .btn {
     display: none;
+  }
+
+  .logo-img {
+    height: 90px;
+    margin: -25px 0;
   }
   
   .mobile-menu-btn {
@@ -3114,6 +3126,23 @@ body.dark-theme .premium-team-card:hover {
   .founder-row-item .avatar-ring-wrapper {
     width: 60px;
     height: 60px;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .founder-row-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 24px 16px;
+  }
+  .founder-info {
+    align-items: center;
+    text-align: center;
   }
 }
 
