@@ -3420,6 +3420,7 @@ body.dark-theme .map-container iframe {
   border-radius: 99px;
   overflow: hidden;
   position: relative;
+  margin-top: -35px;
 }
 
 .loader-progress-line {
