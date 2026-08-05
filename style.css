@@ -3376,43 +3376,12 @@ body.dark-theme .map-container iframe {
   gap: 32px;
 }
 
-.loader-logo-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.loader-logo-symbol {
-  width: 90px;
-  height: 90px;
-  animation: loader-symbol-pulse 2.2s ease-in-out infinite;
-  filter: drop-shadow(0 0 16px rgba(0, 180, 255, 0.2));
-}
-
-.loader-logo-text {
-  font-family: var(--font-sans);
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  display: flex;
-  align-items: center;
+.loader-logo-img {
+  width: 180px;
+  height: auto;
+  animation: loader-logo-pulse 2.2s ease-in-out infinite;
   user-select: none;
-}
-
-.loader-logo-text .text-i {
-  color: var(--accent-blue);
-}
-
-.loader-logo-text .text-ko {
-  color: var(--text-main);
-}
-
-.loader-logo-text .text-rex {
-  background: var(--brand-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  pointer-events: none;
 }
 
 .loader-progress-bar {
@@ -3435,14 +3404,14 @@ body.dark-theme .map-container iframe {
   animation: loader-progress-flow 1.8s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 }
 
-@keyframes loader-symbol-pulse {
+@keyframes loader-logo-pulse {
   0%, 100% {
-    transform: scale(0.96);
-    filter: drop-shadow(0 0 12px rgba(0, 180, 255, 0.15));
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 8px rgba(0, 180, 255, 0.05));
   }
   50% {
-    transform: scale(1.04);
-    filter: drop-shadow(0 0 24px rgba(0, 180, 255, 0.35));
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 20px rgba(0, 180, 255, 0.2));
   }
 }
 
