@@ -1,3 +1,23 @@
+// --- Preloader Hide Logic ---
+(function() {
+  const hidePreloader = () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader && !preloader.classList.contains('fade-out')) {
+      preloader.classList.add('fade-out');
+      setTimeout(() => preloader.remove(), 600);
+    }
+  };
+  
+  if (document.readyState === 'complete') {
+    hidePreloader();
+  } else {
+    window.addEventListener('load', hidePreloader);
+  }
+  
+  // Fail-safe: hide preloader after 4 seconds regardless
+  setTimeout(hidePreloader, 4000);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   // --- Theme Toggle ---
   const themeToggleBtn = document.getElementById('themeToggleBtn');
