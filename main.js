@@ -3,8 +3,10 @@
   const hidePreloader = () => {
     const preloader = document.getElementById('preloader');
     if (preloader && !preloader.classList.contains('fade-out')) {
-      preloader.classList.add('fade-out');
-      setTimeout(() => preloader.remove(), 600);
+      setTimeout(() => {
+        preloader.classList.add('fade-out');
+        setTimeout(() => preloader.remove(), 900);
+      }, 1200); // 1.2s delay to allow user to see the preloader
     }
   };
   

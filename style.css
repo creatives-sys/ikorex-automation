@@ -3358,7 +3358,7 @@ body.dark-theme .map-container iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s ease;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s ease;
   opacity: 1;
   visibility: visible;
 }
@@ -3379,7 +3379,7 @@ body.dark-theme .map-container iframe {
 .loader-logo-img {
   width: 180px;
   height: auto;
-  animation: loader-logo-pulse 2.2s ease-in-out infinite;
+  animation: loader-logo-pulse 4.0s ease-in-out infinite;
   user-select: none;
   pointer-events: none;
 }
@@ -3401,7 +3401,7 @@ body.dark-theme .map-container iframe {
   height: 100%;
   background: var(--brand-grad);
   border-radius: 99px;
-  animation: loader-progress-flow 1.8s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+  animation: loader-progress-flow 3.0s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 }
 
 @keyframes loader-logo-pulse {
