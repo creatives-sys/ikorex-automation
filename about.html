@@ -33,25 +33,29 @@
 
   <!-- Preloader -->
   <div id="preloader">
-    <div class="loader-container">
-      <div class="loader-visual">
-        <div class="loader-circle"></div>
-        <svg viewBox="0 0 24 24" fill="none" class="loader-brand-icon">
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <svg viewBox="0 0 24 24" fill="none" class="loader-logo-symbol">
           <defs>
-            <linearGradient id="loader-grad-top" x1="3" y1="3" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+            <linearGradient id="loader-symbol-grad-top" x1="3" y1="3" x2="21" y2="12" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#00b4ff"/>
               <stop offset="100%" stop-color="#0088ff"/>
             </linearGradient>
-            <linearGradient id="loader-grad-bottom" x1="3" y1="21" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+            <linearGradient id="loader-symbol-grad-bottom" x1="3" y1="21" x2="21" y2="12" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#0055cc"/>
               <stop offset="100%" stop-color="#0088ff"/>
             </linearGradient>
           </defs>
-          <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#loader-grad-top)"/>
-          <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#loader-grad-bottom)"/>
+          <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#loader-symbol-grad-top)"/>
+          <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#loader-symbol-grad-bottom)"/>
         </svg>
+        <div class="loader-logo-text">
+          <span class="text-i">i</span><span class="text-ko">KO</span><span class="text-rex">REX</span>
+        </div>
       </div>
-      <div class="loader-text">iKOREX</div>
+      <div class="loader-progress-bar">
+        <div class="loader-progress-line"></div>
+      </div>
     </div>
   </div>
 
