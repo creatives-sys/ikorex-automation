@@ -2215,10 +2215,13 @@ body.dark-theme .stat-card-compact:hover {
   border-top: 1px solid var(--border-color);
   padding-top: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   font-size: 0.85rem;
   color: var(--text-muted);
+  text-align: center;
 }
 
 /* Animations */
