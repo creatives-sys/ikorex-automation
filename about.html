@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iKOREX | About Us</title>
+  <meta name="description"
+    content="Discover ikorex's mission, values, and the expert engineering and accounting team building next-generation operational automation in Melbourne.">
+
+  <!-- Inter Tight & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <img class="logo-img" src="logo.png" alt="iKOREX Logo">
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-cta">
+          <a href="index.html#get-started" class="btn btn-primary btn-sm">Start Trial</a>
+        </div>
+      </nav>
+
+      <!-- Right CTA & Theme Toggle -->
+      <div class="nav-cta">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="index.html#get-started" class="btn btn-primary btn-sm">Start Trial</a>
+      </div>
+
+      <!-- Mobile menu trigger -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobileMenuBtn">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Section 1: Intro Page Header -->
+  <section class="about-hero-section"
+    style="padding: 160px 20px 80px 20px; text-align: center; position: relative; overflow: hidden; background: radial-gradient(circle at 50% 10%, rgba(0, 136, 255, 0.04) 0%, transparent 60%);">
+    <div class="grid-overlay"></div>
+    <div class="section-container" style="position: relative; z-index: 2;">
+      <!-- Custom Badge -->
+      <div style="margin-bottom: 24px;">
+        <div class="custom-badge">
+          <span class="badge-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" class="badge-svg">
+              <defs>
+                <linearGradient id="logo-icon-grad-top-about" x1="3" y1="3" x2="21" y2="12"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#00b4ff" />
+                  <stop offset="100%" stop-color="#0088ff" />
+                </linearGradient>
+                <linearGradient id="logo-icon-grad-bottom-about" x1="3" y1="21" x2="21" y2="12"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#0055cc" />
+                  <stop offset="100%" stop-color="#0088ff" />
+                </linearGradient>
+              </defs>
+              <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#logo-icon-grad-top-about)" />
+              <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#logo-icon-grad-bottom-about)" />
+            </svg>
+          </span>
+          <span class="badge-text">About Us</span>
+        </div>
+      </div>
+      <h1 class="section-title"
+        style="margin: 0 auto 20px auto; font-size: 3.5rem; line-height: 1.15; max-width: 900px;">About ikorex</h1>
+      <p class="section-subtitle" style="max-width: 680px; margin: 0 auto; font-size: 1.125rem; line-height: 1.6;">
+        We eliminate operational friction, build robust automation architecture, and engineer systems that scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Our Story (2-Column Layout) -->
+  <section class="story-section" style="padding: 80px 20px 100px 20px;">
+    <div class="section-container story-split-grid">
+      <!-- Left Column: Story text -->
+      <div>
+        <div class="custom-badge" style="margin-bottom: 20px;">
+          <span class="badge-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" class="badge-svg">
+              <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#logo-icon-grad-top-about)" />
+              <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#logo-icon-grad-bottom-about)" />
+            </svg>
+          </span>
+          <span class="badge-text">Our Story</span>
+        </div>
+        <h2 class="section-title" style="margin-bottom: 28px; text-align: left; font-size: 3rem; line-height: 1.2;">
+          Built by operators,<br><span class="highlight-blue">for operators.</span>
+        </h2>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 20px;">
+          ikorex started with a simple observation: the businesses losing the most money to inefficiency weren't lacking
+          effort, they were lacking systems. Invoices chased by hand. Approvals stuck in email threads. Good people
+          spending their week on work a machine should be doing.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 20px;">
+          Founded in 2024 by Yesudas Sebastian and Subin Peter, ikorex began by solving one problem well, bringing
+          robotic process automation and WhatsApp-based workflows to Order-to-Cash and Procure-to-Pay operations that
+          were bleeding time and money to manual processing. That focus earned trust across industries and it's what
+          still shapes how we build today.
+        </p>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 0;">
+          We're now based in Melbourne, working with businesses across Australia to turn operational complexity into
+          automation that runs itself. The mission hasn't changed since day one: fewer manual hours, fewer errors, and
+          operations teams who get their time back.
+        </p>
+      </div>
+
+      <!-- Right Column: Founders card widget -->
+      <div class="founders-widget-card">
+        <div style="margin-bottom: 20px;">
+          <span class="status-badge success"
+            style="font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; padding: 4px 10px; border-radius: 50px; background-color: var(--accent-blue-glow); color: var(--accent-orange); text-transform: uppercase;">
+            Executive Leadership
+          </span>
+        </div>
+        <h3 class="founders-widget-title">Founders & Direction</h3>
+        <div class="founders-list">
+          <!-- Founder 1 -->
+          <div class="founder-row-item">
+            <div class="avatar-ring-wrapper">
+              <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+                <img src="assets/images/Team/yesudas_sebastian.jpg" alt="Yesudas Sebastian"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="founder-info">
+              <div class="founder-name">Yesudas Sebastian</div>
+              <div class="founder-role">Co-Founder & CEO</div>
+              <div class="founder-desc-meta">20+ Yrs Process Engineering</div>
+            </div>
+          </div>
+          <!-- Founder 2 -->
+          <div class="founder-row-item">
+            <div class="avatar-ring-wrapper">
+              <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+                <img src="assets/images/Team/subin_peter.png" alt="Subin Peter"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="founder-info">
+              <div class="founder-name">Subin Peter</div>
+              <div class="founder-role">Co-Founder & COO</div>
+              <div class="founder-desc-meta">Enterprise Workflow Architect</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Mission & Values -->
+  <section class="values-section"
+    style="padding: 100px 20px; background: radial-gradient(circle at 50% 50%, rgba(0, 136, 255, 0.02) 0%, transparent 70%); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="section-container">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="custom-badge">
+          <span class="badge-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" class="badge-svg">
+              <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#logo-icon-grad-top-about)" />
+              <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#logo-icon-grad-bottom-about)" />
+            </svg>
+          </span>
+          <span class="badge-text">What Drives Us</span>
+        </div>
+      </div>
+      <h2 class="section-title" style="text-align: center; margin: 0 auto 56px auto; font-size: 3rem; line-height: 1.2;">
+        Mission & Values</h2>
+
+      <div class="values-grid">
+        <!-- Value 1 -->
+        <div class="premium-value-card">
+          <div class="value-icon-box">
+            <!-- Shield icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Built for Reliability</h3>
+          <p class="value-card-desc">We design automation that runs without babysitting. Accurate, auditable, and
+            dependable enough for the processes your business can't afford to get wrong.</p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="premium-value-card">
+          <div class="value-icon-box">
+            <!-- People icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Partners, Not Vendors</h3>
+          <p class="value-card-desc">We stay close to how our clients actually operate. Every engagement starts with
+            understanding the friction, not selling a template.</p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="premium-value-card">
+          <div class="value-icon-box">
+            <!-- Layers icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="value-card-title">Engineered to Scale</h3>
+          <p class="value-card-desc">What we build for one process should extend cleanly to the next, so automation
+            compounds instead of becoming another system to maintain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Team Section -->
+  <section class="team-section" style="padding: 100px 20px 120px 20px;">
+    <div class="section-container">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="custom-badge">
+          <span class="badge-icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" class="badge-svg">
+              <path d="M3 3 L21 12 L8 12 L3 9 Z" fill="url(#logo-icon-grad-top-about)" />
+              <path d="M3 21 L21 12 L8 12 L3 15 Z" fill="url(#logo-icon-grad-bottom-about)" />
+            </svg>
+          </span>
+          <span class="badge-text">Our People</span>
+        </div>
+      </div>
+      <h2 class="section-title" style="text-align: center; margin: 0 auto 56px auto; font-size: 3rem; line-height: 1.2;">The
+        Team Behind the Automation</h2>
+
+      <div class="team-section-grid">
+        <!-- Team Profile 1 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/Team/yesudas_sebastian.jpg" alt="Yesudas Sebastian"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <h3 class="team-profile-name">Yesudas Sebastian</h3>
+          <div class="team-profile-role">Co-Founder & CEO</div>
+          <p class="team-profile-bio">Bachelor Of Technology in Engineering. 20+ yrs of global industry experience in
+            process improvement.</p>
+        </div>
+
+        <!-- Team Profile 2 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/Team/subin_peter.png" alt="Subin Peter"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <h3 class="team-profile-name">Subin Peter</h3>
+          <div class="team-profile-role">Co-Founder & COO</div>
+          <p class="team-profile-bio">Leading operations and client delivery with deep expertise in enterprise workflow
+            design.</p>
+        </div>
+
+        <!-- Team Profile 3 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner">JJ</div>
+          </div>
+          <h3 class="team-profile-name">Justin John</h3>
+          <div class="team-profile-role">Head of RPA Engineering</div>
+          <p class="team-profile-bio">Architecting robust automation systems and cognitive bot networks.</p>
+        </div>
+
+        <!-- Team Profile 4 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/Team/team_2.jpg" alt="Allen Jose"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <h3 class="team-profile-name">Allen Jose</h3>
+          <div class="team-profile-role">Chartered Accountant</div>
+          <p class="team-profile-bio">10+ yrs of experience in corporate insolvency advisory, taxation, and audit across
+            India.</p>
+        </div>
+
+        <!-- Team Profile 5 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/Team/team_3.jpg" alt="Rueben Jose"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <h3 class="team-profile-name">Rueben Jose</h3>
+          <div class="team-profile-role">Chartered Accountant</div>
+          <p class="team-profile-bio">8+ yrs of experience in financial audit and planning across technology,
+            manufacturing, banking, agriculture, and healthcare.</p>
+        </div>
+
+        <!-- Team Profile 6 -->
+        <div class="premium-team-card">
+          <div class="avatar-ring-wrapper">
+            <div class="avatar-circle-inner" style="overflow: hidden; padding: 0;">
+              <img src="assets/images/Team/team_1.jpg" alt="Alen T Jose"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <h3 class="team-profile-name">Alen T Jose</h3>
+          <div class="team-profile-role">Chartered Accountant</div>
+          <p class="team-profile-bio">6+ yrs of experience in bookkeeping, audit, and business consultancy across
+            finance, medical, hospitality, retail, and shipbuilding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="get-started">
+    <div class="section-container">
+      <div class="cta-card">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Automate Your Operations?</h2>
+          <p class="cta-description">Let's build custom workflows that eliminate manual overhead, optimize accuracy, and
+            save hours of work. Schedule a discovery call with our experts today.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Book a Discovery Call</a>
+            <a href="solutions.html" class="btn btn-secondary">Explore Use Cases</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="section-container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img class="logo-img" src="logo.png" alt="iKOREX Logo">
+        </a>
+        <p class="brand-desc">Enterprise-grade intelligent automation for modern businesses. Empowering teams,
+          eliminating manual overhead, and optimizing output.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <div class="social-divider"></div>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </a>
+          <div class="social-divider"></div>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <div class="social-divider"></div>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Solutions</h4>
+          <a href="solutions.html">Solutions</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <div class="link-group">
+          <h4>Company</h4>
+          <a href="contact.html">Contact Team</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="link-group">
+          <h4>Get in Touch</h4>
+          <div class="contact-item">
+            <span class="footer-label">Address</span>
+            <span>U 1/106 Camms Road,<br>Cranbourne, VIC 3977</span>
+          </div>
+          <div class="contact-item">
+            <span class="footer-label">Email</span>
+            <a href="mailto:sales@ikorex.com.au">sales@ikorex.com.au</a>
+          </div>
+          <div class="contact-item">
+            <span class="footer-label">Phone</span>
+            <a href="tel:1800280626">1800 280 626</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom section-container">
+      <p>Copyright &copy; 2026 iKOREX. iKOREX &ndash; Intelligent Process Automation.</p>
+    </div>
+  </footer>
+
+  <!-- Theme and Custom JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
